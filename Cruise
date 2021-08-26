@@ -4,8 +4,9 @@ cruise <- read.csv("cruise.txt")
 
 #Install Packages
 install.packages("ggplot2")
+install.packages("forecast")
 install.packages("tseries")
-library('ggplot2', 'tseries')
+library('ggplot2', 'forecast', 'tseries')
 
 ####SRPV - Daily
 acf(cruise$DailySearch, title = "Daily")
