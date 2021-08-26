@@ -1,7 +1,17 @@
-echo "# CruiseLongBooking" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/bmcs87/CruiseLongBooking.git
-git push -u origin main
+####Long Term Cruise Booking
+#Call the file
+cruise <- read.csv("cruise.txt")
+
+#Install Packages
+install.packages("ggplot2")
+install.packages("tseries")
+library('ggplot2', 'tseries')
+
+####SRPV - Daily
+acf(cruise$DailySearch, title = "Daily")
+
+####SRPV - Weekly
+acf(cruise$WeeklySearch, title = "Weekly")
+
+####SRPV - Monthly
+acf(cruise$MonthSearch, title = "Monthly")
