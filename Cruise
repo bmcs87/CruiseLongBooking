@@ -1,6 +1,6 @@
 ####Long Term Cruise Booking
 #Call the file
-cruise <- read.csv("cruise.txt")
+cruise <- read.csv("cruise.csv")
 
 #Install Packages
 install.packages("ggplot2")
