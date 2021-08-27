@@ -1,18 +1,50 @@
 ####Long Term Cruise Booking
-#Call the file
+
+####Call the file - Daily
 cruise <- read.csv("cruise.csv")
 
-#Install Packages
-install.packages("ggplot2")
-install.packages("forecast")
-install.packages("tseries")
-library('ggplot2', 'forecast', 'tseries')
+#SRPV - Daily
+acf(cruise$DailySearch)
+acf(cruise$DailySearch, lag.max = 400)
 
-####SRPV - Daily
-acf(cruise$DailySearch, title = "Daily")
 
-####SRPV - Weekly
-acf(cruise$WeeklySearch, title = "Weekly")
+####Call the file - Weekly
+cruiseweek <- read.csv("cruiseweek.csv")
 
-####SRPV - Monthly
-acf(cruise$MonthSearch, title = "Monthly")
+#SRPV - Weekly
+acf(cruiseweek$WeeklySearch)
+acf(cruiseweek$WeeklySearch, lag.max = 60)
+
+
+####Call the file - Monthly
+cruisemonth <- read.csv("cruisemonth.csv")
+
+#SRPV - Weekly
+acf(cruisemonth$MonthSearch)
+acf(cruisemonth$MonthSearch, lag.max = 20)
+
+
+
+######Last Minute
+####Call the file - Daily
+cruiselm <- read.csv("cruiselm.csv")
+
+#SRPV - Daily
+acf(cruiselm$DailySearch)
+acf(cruiselm$DailySearch, lag.max = 400)
+
+
+####Call the file - Weekly
+cruiseweek <- read.csv("cruiseweek.csv")
+
+#SRPV - Weekly
+acf(cruiseweek$WeeklySearch)
+acf(cruiseweek$WeeklySearch, lag.max = 60)
+
+
+####Call the file - Monthly
+cruisemonth <- read.csv("cruisemonth.csv")
+
+#SRPV - Weekly
+acf(cruisemonth$MonthSearch)
+acf(cruisemonth$MonthSearch, lag.max = 20)
