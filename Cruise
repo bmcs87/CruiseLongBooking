@@ -1,50 +1,107 @@
 ####Long Term Cruise Booking
 
+
+####2018
 ####Call the file - Daily
-cruise <- read.csv("cruise.csv")
+daily2018 <- read.delim("2018daily.txt")
 
-#SRPV - Daily
-acf(cruise$DailySearch)
-acf(cruise$DailySearch, lag.max = 400)
-
+#SRPV - Daily ACF
+acf(daily2018$SRPV)
+acf(daily2018$SRPV, lag.max = 200)
 
 ####Call the file - Weekly
-cruiseweek <- read.csv("cruiseweek.csv")
+weekly2018 <- read.delim("2018weekly.txt")
 
-#SRPV - Weekly
-acf(cruiseweek$WeeklySearch)
-acf(cruiseweek$WeeklySearch, lag.max = 60)
-
-
-####Call the file - Monthly
-cruisemonth <- read.csv("cruisemonth.csv")
-
-#SRPV - Weekly
-acf(cruisemonth$MonthSearch)
-acf(cruisemonth$MonthSearch, lag.max = 20)
+#SRPV - Weekly ACF
+acf(weekly2018$SRPV)
+acf(weekly2018$SRPV, lag.max = 30)
 
 
 
-######Last Minute
+####2019
 ####Call the file - Daily
-cruiselm <- read.csv("cruiselm.csv")
+daily2019 <- read.delim("2019daily.txt")
 
-#SRPV - Daily
-acf(cruiselm$DailySearch)
-acf(cruiselm$DailySearch, lag.max = 400)
-
+#SRPV - Daily ACF
+acf(daily2019$SRPV)
+acf(daily2019$SRPV, lag.max = 400)
 
 ####Call the file - Weekly
-cruiseweek <- read.csv("cruiseweek.csv")
+weekly2019 <- read.delim("2019weekly.txt")
 
-#SRPV - Weekly
-acf(cruiseweek$WeeklySearch)
-acf(cruiseweek$WeeklySearch, lag.max = 60)
-
+#SRPV - Weekly ACF
+acf(weekly2019$SRPV)
+acf(weekly2019$SRPV, lag.max = 60)
 
 ####Call the file - Monthly
-cruisemonth <- read.csv("cruisemonth.csv")
+monthly2019 <- read.delim("2019monthly.txt")
 
-#SRPV - Weekly
-acf(cruisemonth$MonthSearch)
-acf(cruisemonth$MonthSearch, lag.max = 20)
+#SRPV - Monthly ACF
+acf(monthly2019$SRPV)
+
+
+####2020
+####Call the file - Daily
+daily2020 <- read.delim("2020daily.txt")
+
+#SRPV - Daily ACF
+acf(daily2020$SRPV)
+acf(daily2020$SRPV, lag.max = 400)
+
+####Call the file - Weekly
+weekly2020 <- read.delim("2020weekly.txt")
+
+#SRPV - Weekly ACF
+acf(weekly2020$SRPV)
+acf(weekly2020$SRPV, lag.max = 60)
+
+####Call the file - Monthly
+monthly2020 <- read.delim("2020monthly.txt")
+
+#SRPV - Monthly ACF
+acf(monthly2020$SRPV)
+
+
+####2021
+####Call the file - Daily
+daily2021 <- read.delim("2021daily.txt")
+
+#SRPV - Daily ACF
+acf(daily2021$SRPV)
+acf(daily2021$SRPV, lag.max = 400)
+
+####Call the file - Weekly
+weekly2021 <- read.delim("2021weekly.txt")
+
+#SRPV - Weekly ACF
+acf(weekly2021$SRPV)
+acf(weekly2021$SRPV, lag.max = 60)
+
+####Call the file - Monthly
+monthly2021 <- read.delim("2021monthly.txt")
+
+#SRPV - Monthly ACF
+acf(monthly2021$SRPV)
+
+
+
+####2022
+####Call the file - Daily
+daily2022 <- read.delim("2022daily.txt")
+
+#SRPV - Daily ACF
+acf(daily2022$SRPV)
+acf(daily2022$SRPV, lag.max = 400)
+
+####Call the file - Weekly
+weekly2022 <- read.delim("2022weekly.txt")
+
+#SRPV - Weekly ACF
+acf(weekly2022$SRPV)
+acf(weekly2022$SRPV, lag.max = 60)
+
+####Call the file - Monthly
+monthly2022 <- read.delim("2022monthly.txt")
+
+#SRPV - Monthly ACF
+acf(monthly2022$SRPV)
