@@ -1,0 +1,26 @@
+
+####2019
+####Call the file - Daily
+daily4m2019 <- read.delim("2019daily4m.txt")
+
+#SRPV - Daily ACF
+acf(daily4m2019$SRPV)
+acf(daily4m2019$SRPV, lag.max = 200)
+
+
+####2020
+####Call the file - Daily
+daily4m2020 <- read.delim("2020daily4m.txt")
+
+#SRPV - Daily ACF
+acf(daily4m2020$SRPV)
+acf(daily4m2020$SRPV, lag.max = 200)
+
+
+####2021
+####Call the file - Daily
+daily4m2021 <- read.delim("2021daily4m.txt")
+
+#SRPV - Daily ACF
+acf(daily4m2021$SRPV)
+acf(daily4m2021$SRPV, lag.max = 200)
